@@ -64,3 +64,6 @@ Currently, two official plugins are available:
 
 - [Netlify Docs](https://www.netlify.com/)
 
+### **🎨 Updated the styles.**
+
+<img width="800px" src="https://github.com/user-attachments/assets/02ee6b5c-183b-4f4d-b7a8-979ad0730731" />

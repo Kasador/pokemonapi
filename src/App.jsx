@@ -26,4 +26,5 @@ export default App;
   4) https://meyerweb.com/eric/tools/css/reset/
   5) https://www.schemecolor.com/pokemon-colors.php
   6) https://favicon.io/favicon-converter/
+  7) https://react-icons.github.io/react-icons/
 */
