@@ -2,6 +2,7 @@
 
 <img width="100px" src="https://github.com/user-attachments/assets/2df5aae3-cb7c-40ae-b61c-8ddb0435c586"  alt="pokemon ball image" />
 
+&nbsp;
 
 [![Development Tools](https://skillicons.dev/icons?i=vscode,windows,apple,github)](https://skillicons.dev)
 
@@ -13,7 +14,7 @@
 
 ## 🖥️ Pokemon API
 
-Repository made to create/develop a small app using the Pokemon API. It focuses on using the Pokemon API with asynchronous JavaScript. I will need to use fetch with async / await to interact with the API. This app is built using _**npm create vite@latest**_.
+Repository made to create/develop a small app using the Pokemon API. It focuses on using the [Pokemon API](https://pokeapi.co/) with asynchronous JavaScript. I will need to use fetch with async / await to interact with the API. This app is built using _**npm create vite@latest**_.
 
 # ⚛️ **Tech Stack Overview** 
 
