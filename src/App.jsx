@@ -1,5 +1,6 @@
 import './App.scss';
 import pokeball from './assets/images/pokeball.png'; // pokemon ball logo/icon
+import Pokemon from './components/Pokemon';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
       <img src={pokeball} alt="pokeball" />
       <span>API</span>
     </header>
+    <section>
+      <Pokemon />
+    </section>
     </>
   )
 }
