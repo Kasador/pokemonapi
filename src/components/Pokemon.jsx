@@ -15,16 +15,23 @@ const Pokemon = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Pokemon Data</h1>
-            {pokemonData && ( // this checks to if if the data is fetched before rendering the components
-                <ol>
-                    {pokemonData.results.map((pokemon) => (
-                        <li key={pokemon.name}>{pokemon.name}</li>
-                    ))}
-                </ol>
-            )}
-        </div>
+        <>
+            <h1 className='pokemon-search-title'>Select a Pokemon</h1>
+            <div className='pokemon-search-container'>
+                {pokemonData && ( // this checks to if if the data is fetched before rendering the components
+                    <ol>
+                        {pokemonData.results.map((pokemon) => (
+                            <button key={pokemon.name}>
+                                <li 
+                                    key={pokemon.name} 
+                                    value={pokemon.name} 
+                                    onClick={() => {console.log(pokemon.name)}}>{pokemon.name}</li>
+                            </button>
+                        ))}
+                    </ol>
+                )}
+            </div>
+        </>
     )
 }
 
