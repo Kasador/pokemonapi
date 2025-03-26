@@ -11,6 +11,7 @@
     1) https://getcssscan.com/css-box-shadow-examples
     2) https://www.schemecolor.com/pokemon-colors.php
     3) https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling
+    4) https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll
 */
 
 $light-red: #FF0000;        // dark red
@@ -68,6 +69,8 @@ header {
     // scrollbar-width: thin;
     background-color: $matte-black;
     box-shadow: rgba(51, 51, 51, 0.4) 5px 5px, rgba(102, 102, 102, 0.3) 10px 10px, rgba(153, 153, 153, 0.2) 15px 15px, rgba(204, 204, 204, 0.1) 20px 20px, rgba(204, 204, 204, 0.05) 25px 25px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 
     h1 {
         font-family: 'Pokemon_Hollow';
@@ -79,6 +82,7 @@ header {
 .pokemon-search-container::-webkit-scrollbar {
     display: none;
 }
+// https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll
 
 .pokemon-search-title {
     position: absolute;
