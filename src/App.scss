@@ -1,0 +1,59 @@
+@font-face { // pokemon font downloaded from https://www.dafont.com/pokemon.font >>> Hollow
+    font-family: 'Pokemon_Hollow';
+    src: url('./assets/fonts/Pokemon_Hollow.ttf') format('truetype'),
+}
+@font-face { // pokemon font downloaded from https://www.dafont.com/pokemon.font >>> Solid
+    font-family: 'Pokemon_Solid';
+    src: url('./assets/fonts/Pokemon_Solid.ttf') format('truetype'),
+}
+
+/* Ref: 
+    1) https://getcssscan.com/css-box-shadow-examples
+    2) https://www.schemecolor.com/pokemon-colors.php
+*/
+
+$light-red: #FF0000;        // dark red
+$dark-red: #CC0000;         // light red
+$blue: #3B4CCA;             // light blue
+$light-yellow: #FFDE00;     // dark yellow
+$dark-yellow: #B3A125;      // light yellow
+$gray: #f2f2f2;             // light gray
+$matte-black: #333;         // dark gray
+$pokeball-red: #ED5564;     // pokeball red
+
+body, html {
+    background-color: $gray;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $matte-black;
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: 0;
+    box-shadow: rgba(237, 85, 100, 0.4) 0px 5px, rgba(237, 85, 100, 0.3) 0px 10px, rgba(237, 85, 100, 0.2) 0px 15px, rgba(237, 85, 100, 0.1) 0px 20px, rgba(237, 85, 100, 0.05) 0px 25px;
+
+    h1 {
+        color: whitesmoke;
+        font-family: 'Pokemon_Solid';
+        font-size: 4rem;
+        text-align: center;
+        -webkit-text-stroke: 5px $blue;
+        color: $light-yellow;
+    }
+    span {
+        font-family: 'Pokemon_Solid';
+        -webkit-text-stroke: 5px $matte-black;
+        color: $pokeball-red;
+        font-size: 5rem;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+        margin: 1rem;
+    }
+}
