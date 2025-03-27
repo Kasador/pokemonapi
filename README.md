@@ -67,3 +67,7 @@ Currently, two official plugins are available:
 ### **🎨 Updated the styles.**
 
 <img width="800px" src="https://github.com/user-attachments/assets/02ee6b5c-183b-4f4d-b7a8-979ad0730731" />
+
+### **⇄ API calls are pulling data dynamically.**
+
+<img width="800px" src="https://github.com/user-attachments/assets/04442a48-aff8-4068-9303-89361700dfb9" />

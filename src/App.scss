@@ -146,4 +146,35 @@ ol {
     color: $pokeball-red;
     font-weight: bold;
 }
+.pokemon-info-container {
+    margin-left: 320px;
+    color: $light-yellow;
+    font-family: 'Pokemon_Hollow';
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
 
+    section {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        h1 {
+            font-size: 4rem;
+            color: $pokeball-red;
+        }
+    }
+    article {
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: 2rem;
+            // font-family: 'Pokemon_Solid';
+            color: $matte-black;
+            padding: 1rem;
+        }
+    }
+}
