@@ -22,9 +22,10 @@ $dark-yellow: #B3A125;      // light yellow
 $gray: #f2f2f2;             // light gray
 $matte-black: #333;         // dark gray
 $pokeball-red: #ED5564;     // pokeball red
+$light-gray: #F5F7FA;       // light gray
 
 body, html {
-    background-color: $gray;
+    background-color: lightgray;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -168,13 +169,44 @@ ol {
         }
     }
     article {
-        flex-wrap: wrap;
+        display: flex;
 
-        h2 {
-            font-size: 2rem;
-            // font-family: 'Pokemon_Solid';
-            color: $matte-black;
-            padding: 1rem;
+        div {
+            margin: 10px;
+            width: 40%;
+
+            h2 {
+                font-size: 2rem;
+                // font-family: 'Pokemon_Solid';
+                color: $matte-black;
+                padding: 10px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            padding: 15px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            // https://getcssscan.com/css-box-shadow-examples
+            outline: 2px solid $matte-black;
+            
+            span {
+                font-size: 3rem;
+                color: $light-yellow;
+                padding: 10px;
+            }
+
+            li {
+                font-size: 1.5rem;
+                color: $pokeball-red;
+                margin-left: 2rem;
+                padding: 10px;
+            }
         }
     }
 }

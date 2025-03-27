@@ -86,15 +86,22 @@ const Pokemon = () => {
             {pokemonInfo && (
             <div className='pokemon-info-container'>
                 <section>
-                    <img src={pokemonData.pokemon.sprites.front_default} alt={pokemonData.pokemon.name} />
-                    <h1>{pokemonData.pokemon.name}</h1>
+                    <img src={pokemonInfo.sprites.front_default} alt={pokemonInfo.name} />
+                    <h1>{pokemonInfo.name}</h1>
                 </section>
-                <h2>Height: {pokemonInfo.height}</h2>
-                <h2>Weight: {pokemonInfo.weight}</h2>
-                <h2>Base Experience: {pokemonInfo.base_experience}</h2>
-                <h2>Abilities: {pokemonInfo.abilities.map((ability) => ability.ability.name).join(', ')}</h2>
-                <h2>Types: {pokemonInfo.types.map((type) => type.type.name).join(', ')}</h2>
-                <h2>Stats: {pokemonInfo.stats.map((stat) => stat.stat.name).join(', ')}</h2>
+                <article>
+                    <div>
+                        <h2>Height: {pokemonInfo.height}</h2>
+                        <h2>Weight: {pokemonInfo.weight}</h2>
+                        <h2>Base Experience: {pokemonInfo.base_experience}</h2>
+                        <h2>Abilities: {pokemonInfo.abilities.map((ability) => ability.ability.name).join(', ')}</h2>
+                        <h2>Types: {pokemonInfo.types.map((type) => type.type.name).join(', ')}</h2>
+                    </div>
+                    <ul><span>Stats:</span> {pokemonInfo.stats.map((stat) =>
+                        <li key={stat.stat.name}>{stat.base_stat} {stat.stat.name}</li>
+                    )}
+                    </ul>
+                </article>
             </div>)}
             {loadedPokemon && (
             <div className='pokemon-info-container'>
@@ -103,12 +110,17 @@ const Pokemon = () => {
                     <h1>{pokemonData.pokemon.name}</h1>
                 </section>
                 <article>
-                    <h2>Height: {pokemonData.pokemon.height}</h2>
-                    <h2>Weight: {pokemonData.pokemon.weight}</h2>
-                    <h2>Base Experience: {pokemonData.pokemon.base_experience}</h2>
-                    <h2>Abilities: {pokemonData.pokemon.abilities.map((ability) => ability.ability.name).join(', ')}</h2>
-                    <h2>Types: {pokemonData.pokemon.types.map((type) => type.type.name).join(', ')}</h2>
-                    <h2>Stats: {pokemonData.pokemon.stats.map((stat) => stat.stat.name).join(', ')}</h2>
+                    <div>
+                        <h2>Height: {pokemonData.pokemon.height}</h2>
+                        <h2>Weight: {pokemonData.pokemon.weight}</h2>
+                        <h2>Base Experience: {pokemonData.pokemon.base_experience}</h2>
+                        <h2>Abilities: {pokemonData.pokemon.abilities.map((ability) => ability.ability.name).join(', ')}</h2>
+                        <h2>Types: {pokemonData.pokemon.types.map((type) => type.type.name).join(', ')}</h2>
+                    </div>
+                    <ul><span>Stats:</span> {pokemonData.pokemon.stats.map((stat) =>
+                        <li key={stat.stat.name}>{stat.base_stat} {stat.stat.name}</li>
+                    )}
+                    </ul>
                 </article>
             </div>)}
         </>
