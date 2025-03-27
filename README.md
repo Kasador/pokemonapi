@@ -68,6 +68,10 @@ Currently, two official plugins are available:
 
 <img width="800px" src="https://github.com/user-attachments/assets/02ee6b5c-183b-4f4d-b7a8-979ad0730731" />
 
+### **🎨 Updated the styles. _Version 02_**
+
+<img width="800px" src="https://github.com/user-attachments/assets/8b61e7d7-99db-4fb4-a7c6-8c19dc407947" />
+
 ### **⇄ API calls are pulling data dynamically.**
 
 <img width="800px" src="https://github.com/user-attachments/assets/04442a48-aff8-4068-9303-89361700dfb9" />
@@ -76,3 +80,4 @@ Currently, two official plugins are available:
 - Connected promises to fetch from one endpoint to another, then combine the data.
 - Output the data on first load; get a random Pokémon. 
 - On a click event handler _(pokemon list to the left)_, update
+
